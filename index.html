@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html,
+            head,
+            body {
+                font-size: 1rem;;
+                margin: 0px;
+                padding: 0px;
+            }
+            html{
+                height: 100%;
+            }
+            #body{
+                top: 0px;
+                margin-left: 1px;
+                margin-right: 1px;
+                margin-top: 0px;
+            }
+            #navbar{
+                height: auto;
+                text-align: center;
+                /* background-color: lightblue; */
+                border: solid 1px black;
+            }
+            #main-doc{
+                /* border: solid 1px red; */
+                max-height: 100%;
+            }
+            .main-section{
+                width: auto;
+                margin: 0px 20px 4% 2vw;
+                line-height: 25px;
+                /* background-color: red; */
+            }
+            .section-header{
+                margin-left: -1vw;
+                width: auto;
+            }
+            .nav-link{
+                color: black;
+                font-size: 1.2rem;
+                text-decoration: none;
+            }
+            #nav-list{
+                list-style-type: none;
+                padding: 0px;
+                margin: 0px;
+            }
+            #nav-header{
+                border-bottom: 1px solid black;
+            }
+            .nav-list{
+                text-align: left;
+                padding: 25px 25px 25px 25px;
+                margin-right: 0px;
+                border-bottom: 1px solid black;
+            }
+            .code-element{
+                background-color: rgba(236, 236, 236, 1);
+            }
+            #image{
+                height: 35vw;
+                width: 35vw;
+            }
+            #img-label{
+                width: 35vw;
+                background-color: silver;
+                border: 2px solid black;
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 2.5vw;
+                font-size: 1.2rem;
+                margin-right: 0px;
+                flex-direction: column;
+                text-align: center;
+                font-weight: 600;
+            }
+            #double-flex-div{
+                display: flex;
+                flex-direction: row;
+            }
+            #quick-about-info-box{
+                justify-self: auto;
+                margin: auto;
+                width: 35vw;
+                max-width: 100%;
+                height: 45vw;
+                max-height: 455px;
+                background-color: seashell;
+                border: 3px solid black;
+                overflow:auto;
+            }
+            
+            .info-box-style{
+                border-bottom: 2px solid black;
+                padding:10px;
+                margin:0px;
+            }
+            .info-box-info {
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+                font-size: 1.2rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                    "Birth-Name ."
+                    "Born ."
+                    "Origin ."
+                    "Genres ."
+                    "Years-Active ."
+                    "Label .";
+            }
+            #quick-about-info-box p{
+                font-size: 1rem;
+            }
+    /* WIDESCREEN DISPLAY > 960px */
+        @media(min-width: 961px){    
+            #navbar{
+                position: fixed;
+                top: 0px;
+                bottom: 0px;
+                width: 200px;
+                left: 1px;
+                overflow: scroll;
+            }
+            #main-doc{
+                box-sizing: border-box;
+                position: absolute;
+                max-width: 100%;
+                text-align: left;
+                margin: 0px auto auto 201px;
+            }
+        }
+    /* NARROW SCREEN DISPLAY < 960px */
+        @media(max-width: 960px){
+            #body{
+                display: grid;
+            }
+            #navbar{
+                margin: 0px auto 0px 0px;
+                width: 100%;
+                height: 350px;
+                overflow: auto;
+                grid-column: 1;
+                grid-row: 1;
+            }
+            #main-doc{
+                margin: 0px auto auto auto;
+                width: 100%;
+                grid-column: 1;
+                grid-row: 2;
+            }
+        }    
+        </style>
+    </head>
+
+    <body id="body">
+    <!-- Side Bar -->
+        <div id="wrappa">
+            <nav id="navbar">
+                <header id="nav-header">
+                    <h1>Yeat Info</h1>
+                </header>
+                <ul id="nav-list">
+                    <li class="nav-list"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-list"><a class="nav-link" href="#photo_&_quick_about">Photo & Quick About</a></li>
+                    <li class="nav-list"><a class="nav-link" href="#early_life">Early Life</a></li>
+                    <li class="nav-list"><a class="nav-link" href="#career">Career</a></li>
+                    <li class="nav-list"><a class="nav-link" href="#musical_style">Musical Style</a></li>
+                    <li class="nav-list"><a class="nav-link" href="#discography">Discography</a></li>
+                    <li class="nav-list"><a class="nav-link" href="#fun_facts">Fun Facts</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main id="main-doc">
+            <!-- Main Body -->
+            <!-- ABOUT -->
+            <section id="about" class="main-section">
+                <header class="section-header">
+                    <h1>About</h1>
+                </header>
+                <p>Noah Oliver Smith (born February 26, 2000), known professionally as YEAT, is an 
+                    American rapper, songwriter, and record producer from Portland, Oregon.
+                    Yeat rose to popularity in 2021 after the release of his album 4L, which included 
+                    tracks like "Sorry Bout That" and "Money Twërk", which gained popularity on TikTok. 
+                    He gained further recognition after his single "Gët Busy" released in late 2021.</p>
+            </section>
+            <!-- PICTURE / QUICK ABOUT -->
+            <section id="photo_&_quick_about" class="main-section">
+                <header class="section-header">
+                    <h1>Photo & Quick About</h1>
+                </header>
+                <div id="double-flex-div">
+                <label id="img-label">
+                    <img id="image" src="https://lastfm.freetls.fastly.net/i/u/770x0/f25f3f66be30b77ff3f69fe8879abdbd.jpg">
+                    Noah Oliver Smith (a.k.a YEAT) taking important business calls</label>
+                    <div id="quick-about-info-box">
+                        <h2 class="info-box-style" style="background-color:hsla(208, 100%, 81%, 0.81);text-align: center;">Yeat</h2>
+                        <h3 class="info-box-style" style="background-color:hsla(208, 100%, 81%, 0.81);text-align: center;">Background information</h3>
+                        <div class="info-box-info">
+                            <div style="font-weight: 700;" class="Birth-Name">Birth Name</div>
+                            <p>Noah Oliver Smith</p>
+                            <div style="font-weight: 700;" class="Born">Born</div>
+                            <p>February 26, 2000 Irvine, California, U.S.</p>
+                            <div style="font-weight: 700;" class="Origin">Origin</div>
+                            <p>Portland, Oregon, USA</p>
+                            <div style="font-weight: 700;" class="Genres">Genres</div>
+                            <p>Hip-Hop | Alternative Hip-Hop</p>
+                            <div style="font-weight: 700;" class="Years-Active">Years Active</div>
+                            <p>2015 – Present</p>
+                            <div style="font-weight: 700;" class="Label">Label</div>
+                            <p>Geffen | TwizzyRich</p>
+                        </div>                       
+                    </div>
+                </div>
+            </section>
+            <!-- EARLY LIFE -->
+            <section id="early_life" class="main-section">
+                <header class="section-header">
+                    <h1>Early Life</h1>
+                </header>
+                <p>Yeat was born on February 26, 2000 in Irvine, California to a Mexican father 
+                    and Romanian mother. He moved to Portland, Oregon in his teen years and attended 
+                    Lakeridge High School. After graduating, Yeat moved to New York to pursue his 
+                    music career before eventually returning to Los Angeles, where he currently lives.</p>
+            </section>
+            <!-- CAREER -->
+            <section id="career" class="main-section">
+                <header class="section-header">
+                    <h1>Career</h1>                    
+                </header>
+                    <h3 style="margin-bottom: 0;">2018 – 2021: Career beginnings</h3>
+                        <p style="margin-top: 1vw;">Yeat began his career in 2015, originally making music with the name Lil Yeat, but the releases have since been deleted. 
+                            He also would drop the "Lil" from his stage name. On June 30, 2018, Yeat made his first appearance on the YouTube channel 
+                            Elevator with his track "Br!nk", with his current moniker. Yeat has stated that he created the name Yeat while high and 
+                            trying to come up with one word that sounds familiar to people. He released his first mixtape, Deep Blue Strips on September 20, 2018. 
+                            On February 21, 2019, he premiered the music video for his track "Stay Up" on Elevator.</p>
+                    <h3 style="margin-bottom: 0;">2021 – present: Viral success</h3>
+                        <p style="margin-top: 1vw;">
+                        Yeat achieved viral success online through platforms such as TikTok in mid-2021. Yeat initially emerged following his 4L mixtape, which was released June 11. 
+                        The 4L project notably included "Sorry Bout That" and "Money Twërk".
+                        In August, he released the EP Trëndi which had increased success with "Mad Bout That" and "Fukit". Also in August, a snippet of his song "Gët Busy" 
+                        went viral online, attracting considerable media and fan attention upon its release. The song was particularly cited by media outlets for its line: "this song 
+                        already was turnt but here's a bell", which was immediately followed by the ringing of church bells. Fellow rappers Drake and Lil Yachty also referenced the line.
+                        On September 10, Yeat released his album Up 2 Më through a one-album distribution deal with Interscope Records. The album received generally positive reception from music 
+                        reviewers. After this Interscope deal ended, Yeat fulfilled a promise he made to Zack Bia, signing to the latter's Field Trip Records in a joint venture with Geffen Records.
+                        On January 22, 2022, Up 2 Më made its debut on the Billboard 200, reaching number 183. Also in January, Yeat announced a release date for his next album 2 Alivë for mid-February. 
+                        His song "U Could Tëll" was featured in an episode of the show Euphoria which premiered in February.
+                        He released the single "Still Countin" on February 11, alongside a music video directed by Cole Bennett. On February 18, Yeat released his major label debut album 2 Alivë through Field Trip, Twizzy Rich, and Geffen Records. It debuted at number 6 on the Billboard 200 with around 36,000 units sold, making for his highest charting project.
+                        In December of 2021, Monëy so big became the artist’s biggest single, due to its extensive usage in TikTok videos.
+                        </p>
+            </section>
+            <!-- MUSICAL STYLE -->
+            <section id="musical_style" class="main-section">
+                <header class="section-header">
+                    <h1>Musical Style</h1>
+                </header>
+                <p>Yeat began making music that had Auto-Tune-infused vocals.
+                    In 2021, he transitioned to a style that used "rage beats", 
+                    which became a SoundCloud staple following the release of Playboi Carti's Whole Lotta Red.
+                    He also adopted a melodic rapping style that has been compared to Playboi Carti, Future, and Young Thug.
+                    Yeat has stated the latter two are some of his biggest inspirations.
+                    Yeat has also been noted to employ a unique lingo in his music, coming up with ad-libs and phrases such as 
+                    "twizzy" and "luh geeky", and referencing various "Tonka" vehicles in his lyrics often.</p>
+            </section>
+            <!-- DISCOGRAPHY -->
+            <section id="discography" class="main-section">
+                <header class="section-header">
+                    <h1>Discography</h1>  
+                </header>
+                <h3 style="margin-bottom: 5px;">Studio Albums</h3>
+                <code class="code-element">
+                    Up 2 Më: September 10th, 2021
+                    <br>2 Alivë: February 18th, 2022
+                </code>
+
+                <h3 style="margin-bottom: 5px;">Mixtapes</h3>
+                <code class="code-element">
+                    Wake Up Call: Januray 9th, 2019
+                    <br>I'm So Me: January 3rd, 2020
+                    <br>Alivë: April 2nd, 2021
+                    <br>4L: June 10th, 2021
+                </code>
+
+                <h3 style="margin-bottom: 5px;">EP's</h3>
+                <code class="code-element">
+                    Deep Blue Strips: September 20th, 2018
+                    <br>Different Creature: July 18th, 2019
+                    <br>We Us: April 18th, 2020
+                    <br>Hold Ön: September 11th, 2020
+                    <br>Trëndi: August 5th, 2021
+                </code>
+
+                <h3 style="margin-bottom: 5px;">Charted Singles:</h3>
+                <code class="code-element">
+                    "Gët Busy": 2021
+                    <br>"Still Countin": 2022, charted 26th
+                </code>
+                <h3 style="margin-bottom: 5px;">Other Charted Songs:</h3>
+                <code class="code-element">
+                    "Monëy So Big": 2022
+                    <br>"Poppin": 2022
+                    <br>"Outsidë (feat. Young Thug)": 2022
+                    <br>"Rackz Got Më": 2022
+                </code>
+            </section>
+            <!-- FUN FACTS -->
+            <section id="fun_facts" class="main-section">
+                <header class="section-header">
+                    <h1>Fun Facts</h1>
+                </header>
+                <ul>
+                    <li style="margin-top:15px;">Monëy So Big" did not enter the Billboard Hot 100, but peaked at number one 
+                        on the Bubbling Under Hot 100 Singles chart.</li>
+                    <li style="margin-top:15px;">"Outsidë" did not enter the Billboard Hot 100, but peaked at number 16 
+                        on the Bubbling Under Hot 100 Singles chart.</li>
+                    <li style="margin-top:15px;">Rackz Got Më" did not enter the Billboard Hot 100, but peaked at number seven on 
+                        the Bubbling Under Hot 100 Singles chart.</li>
+                    <li style="margin-top:15px;">"Big body stizz, or the Benz, or the big body Lamb', boy, that bitch 'bout to (brrt)"</li>
+                    <li style="margin-top:15px;">Yeah, I just pulled up like a yankee In London might shank you, the bitch 'bout to (brrt)</li>
+                </ul>
+            </section>
+        
+        
+        </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
